@@ -1,5 +1,17 @@
 package com.company;
 
+import java.util.Random;
+
+class num{
+    private int n;
+
+    public void takeUserInput(int n){
+        this.n = n;
+    }
+
+}
+
+
 public class guess_the_number {
     public static void main(String[] args){
       /*
@@ -12,5 +24,7 @@ public class guess_the_number {
           4. getter and setter for noOfGuesses
           Use properties such as noOfGuesses(int), etc to get this task done!
        */
+
+
     }
 }
