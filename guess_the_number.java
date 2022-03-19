@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Game{
     public int number;
     public int inputNumber;
-    public int noOfGuesses;
+    public int noOfGuesses = 0;
 
     public void setNoOfGuesses(int noOfGuesses) {
         this.noOfGuesses = noOfGuesses;
@@ -26,8 +26,9 @@ class Game{
         return  inputNumber;
     }
     boolean isCorrectNumber(int num){
+        noOfGuesses ++;
         if(num==number){
-            System.out.println("Yes you guessed it right. It was: %d\n You Guessed it in %d attempts:");
+            System.out.format("Yes you guessed it right. It was: %d\n You Guessed it in %d attempts:", number, noOfGuesses);
             return true;
         }else if(num<number){
             System.out.println("Too Low...");
