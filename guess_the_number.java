@@ -1,5 +1,6 @@
 package com.company;
 import java.util.Random;
+import java.util.Scanner;
 
 class Game{
     public int number;
@@ -19,10 +20,15 @@ class Game{
         this.number = rand.nextInt(100); //100 since we are defining range from 0 to 100
     }
     void takeUserInput(){
-
+        Scanner sc = new Scanner(System.in);
+        inputNumber = sc.nextInt();
     }
-    void isCorrectNumber(){
-
+    boolean isCorrectNumber(int num){
+        if(num==number){
+            return true;
+        }else{
+            return  false;
+        }
     }
 }
 
