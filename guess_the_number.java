@@ -27,6 +27,7 @@ class Game{
     }
     boolean isCorrectNumber(int num){
         if(num==number){
+            System.out.println("Yes you guessed it right. It was: %d\n You Guessed it in %d attempts:");
             return true;
         }else if(num<number){
             System.out.println("Too Low...");
