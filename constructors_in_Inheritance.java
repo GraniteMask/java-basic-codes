@@ -43,9 +43,20 @@ class Derived1 extends Base1{
     }
 }
 
+class Derived2 extends Derived1{
+    Derived2{
+        System.out.println("Default Derived2");
+    }
+    Derived2(int x, int y, int z){
+        super(x,y);
+        System.out.println("Derived2:" + z);
+    }
+}
+
 public class constructors_in_Inheritance {
     public static void main(String[] args){
 //        Base1 b = new Base1();
-        Derived1 d = new Derived1(11,12);
+//        Derived1 d = new Derived1(11,12);
+          Derived2 dd = new Derived2(11,12,13);
     }
 }
