@@ -4,6 +4,7 @@ class Base{
     int x;
 
     public void setX(int x) {
+        System.out.println("I am in Base and setting X now");
         this.x = x;
     }
 
@@ -30,7 +31,8 @@ class Derived extends Base{
 
 public class inheritance {
     public static void main(String[] args){
-        Base b = new Base();
+//        Base b = new Base();
+        Derived b = new Derived();
         b.setX(4);
         System.out.println(b.getX());
     }
