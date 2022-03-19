@@ -51,8 +51,12 @@ public class guess_the_number {
           Use properties such as noOfGuesses(int), etc to get this task done!
        */
         Game g = new Game();
-        int num = g.takeUserInput();
-        g.isCorrectNumber(num);
-        System.out.println(g);
+        boolean b = false;
+        while(!b){
+            int num = g.takeUserInput();
+            b = g.isCorrectNumber(num);
+            System.out.println(g);
+        }
+
     }
 }
