@@ -15,26 +15,25 @@ class Game{
         return noOfGuesses;
     }
 
-    void Game(){
+    Game(){
         Random rand = new Random();
         this.number = rand.nextInt(100); //100 since we are defining range from 0 to 100
     }
-    void takeUserInput(){
+    int takeUserInput(){
         System.out.println("Guess the number:");
         Scanner sc = new Scanner(System.in);
         inputNumber = sc.nextInt();
+        return  inputNumber;
     }
     boolean isCorrectNumber(int num){
         if(num==number){
             return true;
         }else if(num<number){
-            System.out.println("Too Low...")
+            System.out.println("Too Low...");
         }else if(num>number){
-            System.out.println("Too High...")
+            System.out.println("Too High...");
         }
-        else{
-            return  false;
-        }
+        return  false;
     }
 }
 
@@ -52,6 +51,8 @@ public class guess_the_number {
           Use properties such as noOfGuesses(int), etc to get this task done!
        */
         Game g = new Game();
-        g.takeUserInput();
+        int num = g.takeUserInput();
+        g.isCorrectNumber(num);
+        System.out.println(g);
     }
 }
