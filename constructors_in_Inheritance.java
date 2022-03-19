@@ -1,6 +1,6 @@
 package com.company;
 
-class Base{
+class Base1{
     public int x;
 
     public void setX(int x) {
@@ -9,6 +9,18 @@ class Base{
 
     public int getX() {
         return x;
+    }
+}
+
+class Derived1 extends Base1{
+    public int y;
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public int getY() {
+        return y;
     }
 }
 
