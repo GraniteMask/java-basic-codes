@@ -1,4 +1,5 @@
 package com.company;
+import java.util.Random;
 
 class Game{
     public int number;
@@ -12,7 +13,7 @@ class Game{
         return noOfGuesses;
     }
 
-    void Game(int n){
+    void Game(){
         this.number = n;
     }
     void takeUserInput(){
