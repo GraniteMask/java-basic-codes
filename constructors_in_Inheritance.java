@@ -11,6 +11,7 @@ class Base1{
         System.out.println("Constructor:" + a);
     }
 
+
     public void setX(int x) {
         this.x = x;
     }
@@ -35,11 +36,16 @@ class Derived1 extends Base1{
         super(0);
         System.out.println("I am a Derived class constructor");
     }
+
+    Derived1(int x, int y){
+        super(x);
+        System.out.println("Derived Constructor y:" + y);
+    }
 }
 
 public class constructors_in_Inheritance {
     public static void main(String[] args){
 //        Base1 b = new Base1();
-        Derived1 d = new Derived1();
+        Derived1 d = new Derived1(11,12);
     }
 }
