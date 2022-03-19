@@ -44,7 +44,7 @@ class Derived1 extends Base1{
 }
 
 class Derived2 extends Derived1{
-    Derived2{
+    Derived2(){
         System.out.println("Default Derived2");
     }
     Derived2(int x, int y, int z){
