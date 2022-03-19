@@ -3,6 +3,7 @@ import java.util.Random;
 
 class Game{
     public int number;
+    public int inputNumber;
     public int noOfGuesses;
 
     public void setNoOfGuesses(int noOfGuesses) {
@@ -14,7 +15,8 @@ class Game{
     }
 
     void Game(){
-        this.number = n;
+        Random rand = new Random();
+        this.number = rand.nextInt(100); //100 since we are defining range from 0 to 100
     }
     void takeUserInput(){
 
@@ -37,7 +39,6 @@ public class guess_the_number {
           4. getter and setter for noOfGuesses
           Use properties such as noOfGuesses(int), etc to get this task done!
        */
-
 
     }
 }
