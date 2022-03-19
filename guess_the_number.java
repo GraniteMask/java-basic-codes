@@ -1,14 +1,26 @@
 package com.company;
 
-import java.util.Random;
+class Game{
+    public int number;
+    public int noOfGuesses;
 
-class num{
-    private int n;
-
-    public void takeUserInput(int n){
-        this.n = n;
+    public void setNoOfGuesses(int noOfGuesses) {
+        this.noOfGuesses = noOfGuesses;
     }
 
+    public int getNoOfGuesses() {
+        return noOfGuesses;
+    }
+
+    void Game(int n){
+        this.number = n;
+    }
+    void takeUserInput(){
+
+    }
+    void isCorrectNumber(){
+
+    }
 }
 
 
