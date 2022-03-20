@@ -8,11 +8,11 @@ interface bicycle{
 
 interface HornBicycle{
     int a = 46;
-    void blowHorn(int decrement);
-    void blowHorn2(int increment);
+    void blowHorn1();
+    void blowHorn2();
 }
 
-class AvonCycle implements bicycle{
+class AvonCycle implements bicycle, HornBicycle{
     void blowHorn(){
         System.out.println("Blow Horn");
     }
@@ -22,6 +22,12 @@ class AvonCycle implements bicycle{
     public void speedUp(int increment){
         System.out.println("Applying Speedup");
     }
+    public void blowHorn1(){
+        System.out.println("wow momo");
+    }
+    public void blowHorn2(){
+        System.out.println("wowowowow");
+    }
 }
 
 public class interfaces {
@@ -29,8 +35,12 @@ public class interfaces {
         AvonCycle cycle = new AvonCycle();
         cycle.applyBrake(1);
         // You can create properties in Interfaces
-        System.out.println(cycle.a);
+//        System.out.println(cycle.a);
         // You cannot modify the properties in interfaces as they are final
         //cycle.a = 46
+
+
+        cycle.blowHorn1();
+        cycle.blowHorn2();
     }
 }
