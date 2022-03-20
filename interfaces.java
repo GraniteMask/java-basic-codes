@@ -6,6 +6,12 @@ interface bicycle{
     void speedUp(int increment);
 }
 
+interface HornBicycle{
+    int a = 46;
+    void blowHorn(int decrement);
+    void blowHorn2(int increment);
+}
+
 class AvonCycle implements bicycle{
     void blowHorn(){
         System.out.println("Blow Horn");
