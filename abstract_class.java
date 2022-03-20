@@ -16,6 +16,15 @@ class Child extends Parent2{
     }
 }
 
+abstract class Child3 extends Parent2{
+    public void tn(){
+        System.out.println("I am good");
+    }
+}
+
 
 public class abstract_class {
+    public static void main(String[] args){
+        Child c = new Child();
+    }
 }
