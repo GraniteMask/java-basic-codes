@@ -25,5 +25,6 @@ public class interfaces {
         // You can create properties in Interfaces
         System.out.println(cycle.a);
         // You cannot modify the properties in interfaces as they are final
+        //cycle.a = 46
     }
 }
