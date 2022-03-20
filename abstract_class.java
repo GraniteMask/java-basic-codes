@@ -25,6 +25,7 @@ abstract class Child3 extends Parent2{
 
 public class abstract_class {
     public static void main(String[] args){
+//        Parent2 p = new Parent2();          CANNOT BE IMPLEMENTED AS THIS A ABSTRACT CLASS
         Child c = new Child();
     }
 }
