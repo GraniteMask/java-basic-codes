@@ -4,6 +4,11 @@ class thread1 extends Thread{
     public void run(){
         while(true){
             System.out.println("Thank you");
+            try {
+                Thread.sleep(455);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
