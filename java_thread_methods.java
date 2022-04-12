@@ -5,7 +5,7 @@ class thread1 extends Thread{
         while(true){
             System.out.println("Thank you");
             try {
-                Thread.sleep(455);
+                Thread.sleep(455);    // stops the thread for the given time in millisecond
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
