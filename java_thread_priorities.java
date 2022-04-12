@@ -14,6 +14,9 @@ public class java_thread_priorities {
     public static void main(String[] args){
         thread t1 = new thread("Ratnadeep");
         thread t2 = new thread("RRR");
+        thread t3 = new thread("RRR");
+        thread t4 = new thread("RRR");
+        thread t5 = new thread("RRR");
     }
 }
 
