@@ -6,7 +6,10 @@ class thread extends Thread{
     }
     public void run(){
         int i=34;
-        System.out.println("Thank you" + this.getName());
+//        System.out.println("Thank you" + this.getName());
+        while(true){
+            System.out.println("Thank you" + this.getName());
+        }
     }
 }
 
@@ -16,7 +19,10 @@ public class java_thread_priorities {
         thread t2 = new thread("RRR1");
         thread t3 = new thread("RRR2");
         thread t4 = new thread("RRR3");
-        thread t5 = new thread("RRR4");
+        thread t5 = new thread("RRR4 (most important)");
+        t5.setPriority(Thread.MAX_PRIORITY);
+        t4.setPriority(Thread.NORM_PRIORITY);
+        t3.setPriority(Thread.MIN_PRIORITY);
         t1.start();
         t2.start();
         t3.start();
