@@ -6,17 +6,22 @@ class thread extends Thread{
     }
     public void run(){
         int i=34;
-        System.out.println("Thank you");
+        System.out.println("Thank you" + this.getName());
     }
 }
 
 public class java_thread_priorities {
     public static void main(String[] args){
         thread t1 = new thread("Ratnadeep");
-        thread t2 = new thread("RRR");
-        thread t3 = new thread("RRR");
-        thread t4 = new thread("RRR");
-        thread t5 = new thread("RRR");
+        thread t2 = new thread("RRR1");
+        thread t3 = new thread("RRR2");
+        thread t4 = new thread("RRR3");
+        thread t5 = new thread("RRR4");
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
+        t5.start();
     }
 }
 
