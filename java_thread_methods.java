@@ -3,7 +3,7 @@ package com.company;
 class thread1 extends Thread{
     public void run(){
         while(true){
-            System.out.println("Thank you" + this.getName());
+            System.out.println("Thank you");
         }
     }
 }
@@ -11,7 +11,7 @@ class thread1 extends Thread{
 class thread2 extends Thread{
     public void run(){
         while(true){
-            System.out.println("Thank you" + this.getName());
+            System.out.println("Thank you");
         }
     }
 }
@@ -22,7 +22,7 @@ public class java_thread_methods {
         thread2 t2 = new thread2();
         t1.start();
         try{
-            t1.join();
+            t1.join();           // this is done so that t2 starts when the execution of t1 finishes
         }catch (Exception e){
             System.out.println(e);
         }
