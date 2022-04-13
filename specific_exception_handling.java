@@ -23,7 +23,8 @@ public class specific_exception_handling {
             System.out.println("ArrayIndexOutOfBoundsException exception occurred");
             System.out.println(e);
         }catch (Exception e){
-            System.out.println("Some exception occurred");
+            System.out.println("Some other exception occurred");
+            System.out.println(e);
         }
     }
 }
