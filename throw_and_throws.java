@@ -29,7 +29,7 @@ public class throw_and_throws {
         try{
 //            int c = divide(6,8);
 //            System.out.println(c);
-            double ar = area(6)
+            double ar = area(6);
         }catch(Exception e){
             System.out.println("Exception " + e);
         }
