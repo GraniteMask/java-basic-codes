@@ -16,6 +16,7 @@ public class arrayList {
         l1.add(0,5);
         l1.add(0,1);    // since this is added later so it will be at the top then the element will be 5
         l1.addAll(l2);   // adding all the elements of l2 in l1
+        l1.set(1,156);
         System.out.println(l1.contains(27));    // return boolean after checking whether this number is in the arraylist or not
         System.out.println(l1.indexOf(27));      // return the index number of that number. If that number is not available then it returns -1.
 //        l1.clear();
