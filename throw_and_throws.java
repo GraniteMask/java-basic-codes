@@ -13,9 +13,9 @@ class NegativeRadiusException extends Exception{
 }
 
 public class throw_and_throws {
-    public static double area(int r){
+    public static double area(int r) throws NegativeRadiusException{
         if(r<0){
-            throw NegativeRadiusException;
+            throw new NegativeRadiusException();
         }
         double result = (Math.PI*r*r);
         return result;
