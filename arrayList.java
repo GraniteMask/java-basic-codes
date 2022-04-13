@@ -1,5 +1,5 @@
 package com.company;
-import java.util.*
+import java.util.*;
 
 public class arrayList {
     public static void main(String[] args){
