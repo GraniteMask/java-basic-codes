@@ -27,11 +27,13 @@ public class throw_and_throws {
 
     public static void main(String[] args){
         try{
-            int c = divide(6,8);
-            System.out.println(c);
+//            int c = divide(6,8);
+//            System.out.println(c);
+            double ar = area(6)
         }catch(Exception e){
             System.out.println("Exception " + e);
         }
+
 
     }
 }
