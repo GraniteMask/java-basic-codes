@@ -1,6 +1,10 @@
 package com.company;
 
 public class throw_and_throws {
+    public static float area(int r){
+        float result = (float) (Math.PI*r*r);
+        return result;
+    }
     public static int divide(int a, int b) throws ArithmeticException{
         int result = a/b;
         return result;
