@@ -19,6 +19,8 @@ public class linkedList {
         l1.set(1,156);
         System.out.println(l1.contains(27));    // return boolean after checking whether this number is in the arraylist or not
         System.out.println(l1.indexOf(27));      // return the index number of that number. If that number is not available then it returns -1.
+        l1.addLast(45);      // add the element at the last of linkedList
+        l1.addFirst(46);
 //        l1.clear();
         for(int i=0; i<l1.size(); i++){
             System.out.println(l1.get(i)); // getting the value of ith element
