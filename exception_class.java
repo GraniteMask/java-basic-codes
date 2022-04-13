@@ -24,8 +24,12 @@ public class exception_class {
                 throw new MyException();
             }catch (Exception e){
                 System.out.println(e.getMessage());
+                System.out.println(e.toString());
+                e.printStackTrace();
+                System.out.println("Finished");
             }
-
         }
     }
 }
+
+// search for exception methods in JAVA
