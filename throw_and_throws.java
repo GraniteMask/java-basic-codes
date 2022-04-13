@@ -1,7 +1,7 @@
 package com.company;
 
 public class throw_and_throws {
-    public static int dicide(int a, int b) throws ArithmeticException{
+    public static int divide(int a, int b) throws ArithmeticException{
         int result = a/b;
         return result;
     }
