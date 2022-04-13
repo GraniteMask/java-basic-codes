@@ -37,3 +37,5 @@ public class throw_and_throws {
 
     }
 }
+
+// We can use 'finally' if we want to execute certain code at any cost.
