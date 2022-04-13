@@ -16,6 +16,12 @@ public class specific_exception_handling {
         try{
             System.out.println("The value at array index entered is: " + marks[ind]);
             System.out.println("The value of array-value/number is: " + marks[ind]/number);
+        }catch (ArithmeticException e){
+            System.out.println("Arithmetic exception occured");
+            System.out.println(e);
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("ArrayIndexOutOfBoundsException exception occurred");
+            System.out.println(e);
         }catch (Exception e){
             System.out.println("Some exception occurred");
         }
