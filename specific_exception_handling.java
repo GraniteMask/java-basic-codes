@@ -13,5 +13,11 @@ public class specific_exception_handling {
         int ind = sc.nextInt();
         System.out.println("Enter the number");
         int number = sc.nextInt();
+        try{
+            System.out.println("The value at array index entered is: " + marks[ind]);
+            System.out.println("The value of array-value/number is: " + marks[ind]/number);
+        }catch (Exception e){
+            System.out.println("Some exception occurred");
+        }
     }
 }
