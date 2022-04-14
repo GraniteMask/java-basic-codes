@@ -13,4 +13,3 @@ public class arrayDequeue {
         System.out.println(ad1.getLast());
     }
 }
- 
