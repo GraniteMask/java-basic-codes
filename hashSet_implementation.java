@@ -9,5 +9,6 @@ public class hashSet_implementation {
         myHashSet.add(8);
         myHashSet.add(3);
         myHashSet.add(11);
+        System.out.println(myHashSet);
     }
 }
